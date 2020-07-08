@@ -1,41 +1,38 @@
-<!-- Please do not change this html logo with link -->
 <a href="https://www.microchip.com" rel="nofollow"><img src="images/microchip.png" alt="MCHP" width="300"/></a>
 
-# Update the title for atmega4809-noise-countermeasures-adc-mplab here
+# ATMEGA4809 Noise Countermeasures for ADC Applications
 
-<!-- This is where the introduction to the example goes, including mentioning the peripherals used -->
+This is an example for noise countermeasures for ADC applications on the ATMEGA4809, this is a general example which is applicable to the whole megaAVR 0-series.
 
 ## Related Documentation
 
-<!-- Any information about an application note or tech brief can be linked here. Use unbreakable links!
-     In addition a link to the device family landing page and relevant peripheral pages as well:
-     - [AN3381 - Brushless DC Fan Speed Control Using Temperature Input and Tachometer Feedback](https://microchip.com/00003381/)
-     - [PIC18F-Q10 Family Product Page](https://www.microchip.com/design-centers/8-bit/pic-mcus/device-selection/pic18f-q10-product-family) -->
+- [AN2551 -  Noise Countermeasures for ADC Applications ](https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en600674)
+- [ATmega4809 Family Product Page](https://www.microchip.com/design-centers/8-bit/avr-mcus/device-selection/atmega4809)
 
 ## Software Used
 
-<!-- All software used in this example must be listed here. Use unbreakable links!
-     - MPLAB® X IDE 5.30 or newer [(microchip.com/mplab/mplab-x-ide)](http://www.microchip.com/mplab/mplab-x-ide)
-     - MPLAB® XC8 2.10 or a newer compiler [(microchip.com/mplab/compilers)](http://www.microchip.com/mplab/compilers)
-     - MPLAB® Code Configurator (MCC) 3.95.0 or newer [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - MPLAB® Code Configurator (MCC) Device Libraries PIC10 / PIC12 / PIC16 / PIC18 MCUs [(microchip.com/mplab/mplab-code-configurator)](https://www.microchip.com/mplab/mplab-code-configurator)
-     - Microchip PIC18F-Q Series Device Support (1.4.109) or newer [(packs.download.microchip.com/)](https://packs.download.microchip.com/) -->
+- [MPLAB X IDE  or v5.40 newer](https://www.microchip.com/mplab/mplab-x-ide)
+- [Data Visualizer](https://www.microchip.com/mplab/avr-support/data-visualizer)
+- ATmega_DFP 1.4.351 or newer
 
 ## Hardware Used
 
-<!-- All hardware used in this example must be listed here. Use unbreakable links!
-     - PIC18F47Q10 Curiosity Nano [(DM182029)](https://www.microchip.com/Developmenttools/ProductDetails/DM182029)
-     - Curiosity Nano Base for Click boards™ [(AC164162)](https://www.microchip.com/Developmenttools/ProductDetails/AC164162)
-     - POT Click board™ [(MIKROE-3402)](https://www.mikroe.com/pot-click) -->
+- ATmega4809 Xplained Pro [(ATMEGA4809-XPRO)](https://www.microchip.com/developmenttools/ProductDetails/ATMEGA4809-XPRO)
 
 ## Setup
 
-<!-- Explain how to connect hardware and set up software. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
+1. Open `NoiseCountermeasuresforADCApplicationswithmegaAVR0-series.X` in MPLAB
+2. Connect the ATmega4809 Xplained Pro to your computer with a micro usb cable.
+3. Make sure the kit is selected as the tool to be programmed under project settings
+4. Press the make and program button to program the device.
+5. Open data visualizer to interact with the virtual comport over UART on the devkit. The baud rate is `19200`
+6. Follow Appendix A in [AN2551](#Related-Documentation) for step by step instructions on how to graph the samples
 
 ## Operation
 
-<!-- Explain how to operate the example. Depending on complexity, step-by-step instructions and/or tables and/or images can be used -->
+Filtered ADC values will be passed over the UART port, these can be parsed or graphed for a visual understanding of ADC value.
+The ADC input is mapped to `PD5` and will change the ADC values being sent over UART depending on the voltage applied.
 
 ## Summary
 
-<!-- Summarize what the example has shown -->
+We have here shown how to get started with the [AN2551 -  Noise Countermeasures for ADC Applications](#Related-Documentation) appnote. For more details about the code and theory of operation please inspect the appnote itself.
