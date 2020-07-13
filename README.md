@@ -2,7 +2,7 @@
 
 # ATMEGA4809 Noise Countermeasures for ADC Applications
 
-This is an example for noise countermeasures for ADC applications on the ATMEGA4809, this is a general example which is applicable to the whole megaAVR 0-series. In the ADCs implemented in megaAVR® 0-series, the inputsignal is fed through a Sample-and-Hold circuit which ensures that the input voltage to the ADC is held ata constant level during sampling.
+This is an example for noise countermeasures for ADC applications on the ATMEGA4809, this is a general example which is applicable to the whole megaAVR 0-series. In the ADCs implemented in megaAVR® 0-series, the input signal is fed through a Sample-and-Hold circuit which ensures that the input voltage to the ADC is held at a constant level during sampling.
 
 The example code is based on the application note [AN2551](#Related-Documentation)
 
@@ -14,8 +14,11 @@ The example code is based on the application note [AN2551](#Related-Documentatio
 ## Software Used
 
 - [MPLAB X IDE v5.40 or later](https://www.microchip.com/mplab/mplab-x-ide)
-- [Data Visualizer](https://www.microchip.com/mplab/avr-support/data-visualizer)
+- Data Visualizer
+    - [MPLAB Data Visualizer](https://gallery.microchip.com/packages/MPLAB-Data-Visualizer-Standalone(Windows)/)
+    - [Studio Data visualizer](https://www.microchip.com/mplab/avr-support/data-visualizer)
 - ATmega_DFP 1.4.351 or later
+- [XC8 (v2.20)](https://www.microchip.com/mplab/compilers) alternativly [AVR/GNU C Compiler 5.4.0](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers) can be used
 
 ## Hardware Used
 
@@ -23,7 +26,6 @@ The example code is based on the application note [AN2551](#Related-Documentatio
 
 ## Setup
 
-* Connect the ATmega4809 Xplained Pro to your computer with a micro usb cable.
 * The ADC input is mapped to `PD5` and will change the ADC values being sent over UART depending on the voltage applied.
 
 ## Operation
@@ -41,6 +43,7 @@ The example code is based on the application note [AN2551](#Related-Documentatio
 5. Press the make and program button to program the device.
 6. Open data visualizer to interact with the virtual comport over UART on the devkit. The baud rate is `19200`
 7. Follow Appendix A in [AN2551](#Related-Documentation) for step by step instructions on how to graph the samples
+    * Alternatively you can open the provided MPLAB Data Visualizer config `MPLAB_Data_Visualizer_Config_Noise_Countermesure.json` file. Make sure the correct COM port is selected when it's open.
 
 Filtered ADC values will be passed over the UART port, these can be parsed or graphed for a visual understanding of ADC value.
 
