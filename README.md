@@ -2,7 +2,9 @@
 
 # ATMEGA4809 Noise Countermeasures for ADC Applications
 
-This is an example for noise countermeasures for ADC applications on the ATMEGA4809, this is a general example which is applicable to the whole megaAVR 0-series. The example code is based on the application note [AN2551](#Related-Documentation)
+This is an example for noise countermeasures for ADC applications on the ATMEGA4809, this is a general example which is applicable to the whole megaAVR 0-series. In the ADCs implemented in megaAVR® 0-series, the inputsignal is fed through a Sample-and-Hold circuit which ensures that the input voltage to the ADC is held ata constant level during sampling.
+
+The example code is based on the application note [AN2551](#Related-Documentation)
 
 ## Related Documentation
 
@@ -28,10 +30,17 @@ This is an example for noise countermeasures for ADC applications on the ATMEGA4
 
 1. Open `NoiseCountermeasuresforADCApplicationswithmegaAVR0-series.X` in MPLAB
 2. Connect the ATmega4809 Xplained Pro to your computer with a micro usb cable.
-3. Make sure the kit is selected as the tool to be programmed under project settings
-4. Press the make and program button to program the device.
-5. Open data visualizer to interact with the virtual comport over UART on the devkit. The baud rate is `19200`
-6. Follow Appendix A in [AN2551](#Related-Documentation) for step by step instructions on how to graph the samples
+3. Use these defines to plot a graph without noise
+    ```c
+    #define HARMONIC_NOISE 0
+    #define ADC_64X_ACCUMULATOR_ENABLE 0
+    #define SAMPLING_DELAY 0
+    #define ENABLE_ASDV 0 
+    ```
+4. Make sure the kit is selected as the tool to be programmed under project settings
+5. Press the make and program button to program the device.
+6. Open data visualizer to interact with the virtual comport over UART on the devkit. The baud rate is `19200`
+7. Follow Appendix A in [AN2551](#Related-Documentation) for step by step instructions on how to graph the samples
 
 Filtered ADC values will be passed over the UART port, these can be parsed or graphed for a visual understanding of ADC value.
 
