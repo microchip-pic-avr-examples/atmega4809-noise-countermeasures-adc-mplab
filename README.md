@@ -17,7 +17,7 @@ The example code is based on the application note [AN2551](#Related-Documentatio
 - Data Visualizer
     - [MPLAB Data Visualizer](https://gallery.microchip.com/packages/MPLAB-Data-Visualizer-Standalone(Windows)/)
     - [Studio Data visualizer](https://www.microchip.com/mplab/avr-support/data-visualizer)
-- ATmega_DFP 1.4.351 or later
+- ATmega_DFP 2.2.108 or later
 - [XC8 (v2.20)](https://www.microchip.com/mplab/compilers) alternativly [AVR/GNU C Compiler 5.4.0](https://www.microchip.com/mplab/avr-support/avr-and-arm-toolchains-c-compilers) can be used
 
 ## Hardware Used
