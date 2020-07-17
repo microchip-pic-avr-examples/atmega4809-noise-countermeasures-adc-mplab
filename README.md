@@ -31,7 +31,7 @@ The example code is based on the application note [AN2551](https://www.microchip
 ## Operation
 
 1. Download the zip file or clone the example to get the source code.
-2. Open `NoiseCountermeasuresforADCApplicationswithmegaAVR0-series.X` in MPLAB
+2. Open `atmega4809-noise-countermeasures-adc-mplab.X` in MPLAB
 3. Connect the ATmega4809 Xplained Pro to your computer with a micro usb cable.
 4. Use these defines to plot a graph without noise
     ```c
