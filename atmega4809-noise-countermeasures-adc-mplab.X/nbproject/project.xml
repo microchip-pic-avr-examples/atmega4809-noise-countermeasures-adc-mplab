@@ -3,7 +3,7 @@
     <type>com.microchip.mplab.nbide.embedded.makeproject</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
-            <name>NoiseCountermeasuresforADCApplicationswithmegaAVR0-series</name>
+            <name>atmega4809-noise-countermeasures-adc-mplab</name>
             <creation-uuid>ad607587-2bc2-4ac4-86a8-21d2e1b1be63</creation-uuid>
             <make-project-type>0</make-project-type>
             <c-extensions>c</c-extensions>
