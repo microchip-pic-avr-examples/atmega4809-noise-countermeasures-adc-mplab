@@ -3,28 +3,28 @@
     "category": "com.microchip.ide.project",
     "content": {
         "metaDataVersion": "1.1.0",
-        "name": "com.microchip.mcu8.mplabx.project.",
-        "version": " ",
-        "displayName": "  ",
-        "projectName": "",
-        "shortDescription": "",
+        "name": "com.microchip.mcu8.mplabx.project.atmega4809-noise-countermeasures-adc-mplab",
+        "version": "1.0.0",
+        "displayName": "ATmega4809 Noise Countermeasures for ADC Applications",
+        "projectName": "atmega4809-noise-countermeasures-adc-mplab",
+        "shortDescription": "This MPLAB X example demonstrates noise countermeasures for ADC applications on megaAVR 0-series devices",
         "ide": {
-            "name": "",
-            "semverRange": ""
+            "name": "MPLABX",
+            "semverRange": ">=5.40"
         },
         "compiler": [
-			{
-				"name": "",
-				"semverRange": ""
-			}
-		],
+            {
+                "name": "XC8",
+                "semverRange": "^2.20"
+            }
+        ],
         "dfp": {
-            "name": "",
-            "semverRange": ""
+            "name": "ATmega_DFP",
+            "semverRange": "^2.2.108"
         },
         "configurator": {
-            "name": "",
-            "semverRange": ""
+            "name": "START",
+            "semverRange": ">=1.7.360"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -32,37 +32,57 @@
             "content": {
                 "metaDataVersion": "1.0.0",
                 "category": "com.microchip.device",
-                "name": "",
+                "name": "ATmega4809",
                 "versionRange": "*"
             }
         },
-        "author": "",
+        "author": "Microchip",
         "subcategories": [
-            "",
             [
-               "Peripherals", ""
+                "Peripherals",
+                "VREF"
             ],
             [
-               "Peripherals", ""
-            ]            			
+                "Peripherals",
+                "ADC"
+            ],
+            [
+                "Peripherals",
+                "USART"
+            ],
+            [
+                "Peripherals",
+                "TCA"
+            ],
+            [
+                "Development Kit",
+                "ATmega4809 Xplained Pro"
+            ],
+            [
+                "Supporting Tools",
+                "MPLAB Data Visualizer"
+            ]
         ],
         "peripherals": [
-            "",""
+            "VREF",
+            "ADC",
+            "USART",
+            "TCA"
         ],
         "keywords": [
             "",
-            ""			
+            ""
         ],
-		"additionalData": {
-			"longDescription": {
-				"metaDataVersion": "1.0.0",
-				"category": "com.microchip.portal.fileRef",
-				"content": {
-					"metaDataVersion": "1.0.0",
-					"fileName": "./README.md",
-					"mimeType": "text/markdown"
-				}
-			}
-		}
-	}
+        "additionalData": {
+            "longDescription": {
+                "metaDataVersion": "1.0.0",
+                "category": "com.microchip.portal.fileRef",
+                "content": {
+                    "metaDataVersion": "1.0.0",
+                    "fileName": "./README.md",
+                    "mimeType": "text/markdown"
+                }
+            }
+        }
+    }
 }
