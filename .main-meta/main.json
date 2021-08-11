@@ -4,18 +4,18 @@
     "content": {
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.atmega4809-noise-countermeasures-adc-mplab",
-        "version": "1.0.0",
+        "version": "1.0.1",
         "displayName": "ATmega4809 Noise Countermeasures for ADC Applications",
         "projectName": "atmega4809-noise-countermeasures-adc-mplab",
         "shortDescription": "This MPLAB X example demonstrates noise countermeasures for ADC applications on megaAVR 0-series devices",
         "ide": {
-            "name": "MPLABX",
-            "semverRange": ">=5.40"
+            "name": "MPLAB X",
+            "semverRange": ">=5.40.0"
         },
         "compiler": [
             {
                 "name": "XC8",
-                "semverRange": "^2.20"
+                "semverRange": "^2.20.0"
             }
         ],
         "dfp": {
@@ -70,8 +70,11 @@
             "TCA"
         ],
         "keywords": [
-            "",
-            ""
+            "Filter",
+            "PWM",
+            "START",
+            "MPLAB Data Visualizer",
+            "Sample Accumulation"
         ],
         "additionalData": {
             "longDescription": {
